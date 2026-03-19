@@ -89,7 +89,7 @@ class CircuitBreaker:
     def _maybe_transition(self) -> None:
         if self._state == self.OPEN:
             now = time.monotonic()
-            if self._opened_at is not None and (now - self._opened_at) >= self._recovery_timeout:
+            if self._opened_at is not None and (now - self._opened_at) > self._recovery_timeout:
                 self._state = self.HALF_OPEN
 
     def allow_request(self) -> bool:
