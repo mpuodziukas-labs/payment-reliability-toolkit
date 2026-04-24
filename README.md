@@ -1,5 +1,8 @@
 # Stripe Payment Reliability
 
+> Third-party toolkit wrapping Stripe's public API. Not affiliated with Stripe, Inc.
+
+
 Production-grade reliability primitives for payment infrastructure: idempotency, retry strategies, and circuit breaking.
 
 ## Modules
